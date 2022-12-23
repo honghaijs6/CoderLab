@@ -1,11 +1,18 @@
 # About App
 - CoderLab is Live coding tool which allow user practice their problem solving skill and also can invite friend, experts jumping into their live session by then can see and talk each other
 
+# Feature available 
+- Practice  
+- Video conference only 2 users allowed 
+
+# Feature update in the future
+- Challenge 
+- Contest
+
 # link demo 
 https://coderlabtest.herokuapp.com/
 
 # CoderLab NextJS 
-- Collaboration enviroment
 - Using NextJs + Firestore
 - MVC Design pattern 
 - No Redux or any state management library,using (M) Layer on MVC pattern for state management
