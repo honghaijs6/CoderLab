@@ -13,6 +13,5 @@ https://coderlabtest.herokuapp.com/
 - yarn install 
 - yarn dev
 
-[
-![22](https://user-images.githubusercontent.com/44365604/209257665-4ae1791d-2de9-440a-ba04-839b5ffad0ea.PNG)
-](url)
+![111](https://user-images.githubusercontent.com/44365604/209258156-25c45703-a536-4c28-8b5d-d18ada49e68b.PNG)
+![22](https://user-images.githubusercontent.com/44365604/209258169-32682f0e-834d-4998-a26b-5ec02819c170.PNG)
