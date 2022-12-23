@@ -8,7 +8,7 @@
 # Feature update in the future
 - Challenge : this is a place where user can take a challenge and increase their level to reach the point become CoderLab experts, available support their mentees, and receiving remuneration
 
-- Courses : this feature allows Professionals to build their courses and  available to students sign up for the course, when students sign up they can learn and practice directly with mentors.
+- Courses : this feature allows Professionals to build their courses and  available to members sign up for the course, when members sign up they can learn and practice directly with mentors.
 
 
 # link demo 
