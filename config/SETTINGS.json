@@ -1,5 +1,5 @@
 {
-    "APP_URL": "https://coderlabtest.herokuapp.com",
+    "APP_URL": "https://coderlabdev.herokuapp.com",
     "INVITE": [
         { "code": "friend", "value": "Invite friend" },
         { "code": "expert", "value": "Invite expert" }

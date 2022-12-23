@@ -1,5 +1,5 @@
 {
-    "APP_URL":"https://coderlabtest.herokuapp.com",
+    "APP_URL":"https://coderlabdev.herokuapp.com",
     "IDE_LANG": [
         {
             "code": "javascript",
