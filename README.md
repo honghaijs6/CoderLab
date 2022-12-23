@@ -10,7 +10,6 @@
 
 - Courses : this feature allows Professionals to build their courses and  available to students sign up for the course, when students sign up they can learn and practice directly with mentors.
 
-- Contest : Every month CoderLab holds contests that allow members to participate to find the best members of the month
 
 # link demo 
 https://coderlabtest.herokuapp.com/
