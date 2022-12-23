@@ -7,6 +7,8 @@ https://coderlabtest.herokuapp.com/
 # CoderLab NextJS 
 - Collaboration enviroment
 - Using NextJs + Firestore
+- MVC Design pattern 
+- No Redux or any state management library,using (M) Layer on MVC pattern for state management
 
 # Getting start 1,2,3
 
