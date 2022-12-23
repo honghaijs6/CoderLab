@@ -1,0 +1,57 @@
+{
+    "APP_URL": "https://coderlabtest.herokuapp.com",
+    "INVITE": [
+        { "code": "friend", "value": "Invite friend" },
+        { "code": "expert", "value": "Invite expert" }
+    ],
+    "EXPERTS": [
+        {
+            "id": 1,
+            "email": "harley@coderpush.com",
+            "name": "Harley Trung",
+            "level": "expert",
+            "follower": 155,
+            "image": "https://avatars.githubusercontent.com/u/44055?s=70&v=4"
+        },
+        {
+            "id": 2,
+            "email": "long@coderpush.com",
+            "name": "Long Vu",
+            "level": "expert",
+            "follower": 9,
+            "image": "https://avatars.githubusercontent.com/u/8022714?s=70&v=4"
+        },
+        {
+            "id": 3,
+            "email": "thientran@coderpush.com",
+            "name": "Thien Tran",
+            "level": "expert",
+            "follower": 3,
+            "image": "https://avatars.githubusercontent.com/u/2922275?s=70&v=4"
+        },
+        {
+            "id": 4,
+            "email": "hien@coderpush.com",
+            "name": "Dinh Ngoc Hien",
+            "level": "expert",
+            "follower": 37,
+            "image": "https://avatars.githubusercontent.com/u/6258714?s=70&v=4"
+        },
+        {
+            "id": 5,
+            "email": "sunny@coderpush.com",
+            "name": "Sunnyvo",
+            "level": "expert",
+            "follower": 2,
+            "image": "https://avatars.githubusercontent.com/u/30016985?s=70&v=4"
+        },
+        {
+            "id": 6,
+            "email": "cuong@coderpush.com",
+            "name": "Cuong Chung",
+            "level": "expert",
+            "follower": 1,
+            "image": "https://avatars.githubusercontent.com/u/30486967?s=70&v=4"
+        }
+    ]
+}

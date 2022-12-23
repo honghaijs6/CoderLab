@@ -1,0 +1,174 @@
+$light: #fff;
+$dark: #2e2e2e; 
+$dark-light: #414141;
+$gray: #777777;
+$yellow: #ffcc21;
+$organge-light: #ff963c;
+$organge-dark: #ea6c00;
+$blue-light: #8fe9d0;
+$green: #00ff00;
+
+/*************************VIDEO CALL SESSION *******************/
+.video-call-session {
+    right: 0px;
+    top: 90px;
+    width: 200px;
+    height: 100vh;
+    position: fixed !important;
+    z-index: 110000;
+    background-color: transparent !important;
+    color: red !important;
+}
+
+.video-call-session video {
+    width: 200px;
+    height: 200px;
+    background-color: #000000 !important;
+}
+
+/*****************HEADER**************************************/
+.PLAYGROUND > .header {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: $dark-light;
+    align-items: center;
+
+    border-bottom: 1px solid rgba($color: #fff, $alpha: 0.1);
+}
+
+.PLAYGROUND > .header .branding {
+    width: 300px;
+    height: 50px;
+
+    font-size: 20px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+}
+
+.PLAYGROUND > .header .branding .icon {
+    width: 50px;
+    color: $yellow;
+    display: grid;
+    place-items: center;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+}
+
+.PLAYGROUND > .header .branding .title {
+    line-height: 50px;
+    padding-left: 15px;
+    color: $yellow;
+    text-transform: capitalize;
+}
+
+.PLAYGROUND > .header .user-tool ul {
+    margin: 0px;
+    padding: 0px;
+}
+.PLAYGROUND > .header .user-tool ul li {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.PLAYGROUND > .header .user-tool ul li a {
+    display: block;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 38px;
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    color: $yellow;
+}
+.PLAYGROUND > .header .user-tool ul li a:hover {
+    background-color: rgba($color: #000000, $alpha: 0.5);
+}
+.PLAYGROUND > .header .user-tool ul li img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #fff;
+    padding: 1px;
+}
+
+.PLAYGROUND > .header .user-tool ul li div {
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+    display: block;
+    color: $yellow;
+}
+/*****************END HEADER********************************/
+
+/***************WORL PLACE**********************************/
+.PLAYGROUND > .workplace {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.PLAYGROUND > .workplace .left-bar {
+    width: 50px;
+
+    height: calc(100% - 50px);
+    background-color: $dark-light;
+    border-right: 1px solid rgba($color: #fff, $alpha: 0.1);
+    display: grid;
+    place-items: center;
+}
+
+.PLAYGROUND > .workplace .left-bar ul {
+    margin: 0px;
+    padding: 0px;
+}
+.PLAYGROUND > .workplace .left-bar ul li {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.PLAYGROUND > .workplace .left-bar ul li a {
+    width: 50px;
+    line-height: 60px;
+    height: 50px !important;
+    display: block;
+    text-align: center;
+    padding-left: 4px;
+    cursor: pointer;
+}
+.PLAYGROUND > .workplace .left-bar ul li a:hover,
+.PLAYGROUND > .workplace .left-bar ul li a.active {
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    border-left: 2px solid $organge-dark;
+}
+
+.PLAYGROUND > .workplace .frame {
+    width: calc(100% - 50px);
+}
+
+.PLAYGROUND > .footer {
+    left: 0px;
+    bottom: 0px;
+    position: fixed;
+    height: 20px;
+    z-index: 1000;
+    width: 100%;
+    background: #202020 ;
+    border-top: 1px solid rgba($color: #fff, $alpha: 0.2);
+    color: #fff;
+    font-size: 11px;
+    padding: 0px 3px;
+}
+.PLAYGROUND > .footer .item{
+    line-height: 20px;
+}

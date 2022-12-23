@@ -1,0 +1,83 @@
+:root {
+    --light: #fff;
+    --dark: #2e2e2e;
+    --dark-light: #414141;
+    --gray: #777777;
+    --yellow: #ffcc21;
+    --organge-light: #ff963c;
+    --organge-dark: #ea6c00;
+    --blue-light: #8fe9d0;
+    --green: #00ff00;
+}
+
+input.form-control {
+    background-color: transparent !important;
+    font-size: 12px !important;
+    color: #fff;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 2;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    color: #fff !important;
+}
+
+/*************** MODAL **********************/
+.modal {
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.6);
+}
+.modal-content {
+    margin-top: 15%;
+
+    background-color: var(--dark-light) !important;
+    color: #fff;
+    padding: 5px !important;
+}
+
+.modal-header,
+.modal-footer {
+    border: 0px !important;
+}
+.modal-body {
+    border: 0px !important;
+}
+
+/***********BUTTONS**************************/
+.btn {
+    height: 30px !important;
+    line-height: 15px !important;
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    font-weight: 300 !important;
+}
+.btn:hover {
+    background-color: var(--organge-dark) !important;
+    border: 1px solid rgba(0, 0, 0, 0.2) !important;
+}
+.btn-primary,
+.btn-select {
+    background-color: var(--organge-light) !important;
+
+    border: 1px solid rgba(0, 0, 0, 0.2) !important;
+}
+.btn-select {
+    background-color: transparent !important;
+    border: 1px solid rgba(255, 255, 255, 0.5) !important;
+    color: #fff !important;
+}
+
+button:disabled,
+button[disabled] {
+    background-color: #ccc !important;
+}
+.badge{
+    font-weight: 300 !important;
+}

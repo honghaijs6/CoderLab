@@ -1,0 +1,27 @@
+{
+    "APP_URL":"https://coderlabtest.herokuapp.com",
+    "IDE_LANG": [
+        {
+            "code": "javascript",
+            "value": "Javascript"
+        },
+        {
+            "code": "typescript",
+            "value": "TypeScript"
+        }
+    ],
+    "SOCKET_EVENTS": {
+        "CLIENT_SERVER": {
+            "IDE": "ON-IDE-CHANGE",
+            "RUN": "ON-IDE-RUN",
+            "NEW_MEMBER":"ON-NEW-MERMBER-UPDATE",
+            "USER_ACTION":"ON_USER_ACTION"
+        },
+        "SERVER_CLIENT": {
+            "IDE": "IDE-UPDATE",
+            "RUN": "IDE-UPDATE-RUN",
+            "NEW_MEMBER":"NEW-MERMBER-UPDATE",
+            "USER_ACTION":"ON_USER_ACTION_UPDATE"
+        }
+    }
+}
