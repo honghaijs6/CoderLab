@@ -15,7 +15,7 @@
 https://coderlabtest.herokuapp.com/
 
 # CoderLab NextJS 
-- Using NextJs + Firestore
+- Using NextJs + Firestore - SocketIo - WebRTC
 - MVC Design pattern 
 - No Redux or any state management library,using (M) Layer on MVC pattern for state management
 
