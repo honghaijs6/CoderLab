@@ -12,3 +12,7 @@ https://coderlabtest.herokuapp.com/
 
 - yarn install 
 - yarn dev
+
+[
+![22](https://user-images.githubusercontent.com/44365604/209257665-4ae1791d-2de9-440a-ba04-839b5ffad0ea.PNG)
+](url)
