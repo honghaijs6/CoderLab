@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="footer split-2" style={{ justifyContent: 'space-between' }}>
             <div className="item" id="APP-STATUS"></div>
             <div className="item" style={{ textAlign: 'right' }}>
-                {IDEModel._instance.state.myId}
+                {/* IDEModel._instance.state.myId */}
             </div>
         </div>
     )

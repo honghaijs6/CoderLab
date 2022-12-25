@@ -1,5 +1,57 @@
 {
-    "APP_URL":"https://coderlabdev.herokuapp.com",
+    "APP_URL": "https://coderlabdev.herokuapp.com",
+    "PLUGINS": [
+        {
+            "icon": "note",
+            "name": "Note",
+            "alias": "note"
+        },
+        {
+            "icon": "hash",
+            "name": "Blog",
+            "alias": "blogs"
+        },
+        {
+            "icon": "course",
+            "name": "Course",
+            "alias": "courses"
+        },
+        {
+            "icon": "coffee",
+            "name": "Practice",
+            "alias": "practice"
+        },
+        {
+            "icon": "challenge",
+            "name": "Challenge",
+            "alias": "challenge"
+        },
+        {
+            "icon": "team",
+            "name": "Team",
+            "alias": "team"
+        },
+        {
+            "icon": "card",
+            "name": "E-card",
+            "alias": "card"
+        },
+        {
+            "icon": "design",
+            "name": "Design",
+            "alias": "design"
+        },
+        {
+            "icon": "contract",
+            "name": "Contract management",
+            "alias": "contracts"
+        },
+        {
+            "icon": "github",
+            "name": "Github",
+            "alias": "codebase"
+        }
+    ],
     "IDE_LANG": [
         {
             "code": "javascript",
@@ -14,14 +66,14 @@
         "CLIENT_SERVER": {
             "IDE": "ON-IDE-CHANGE",
             "RUN": "ON-IDE-RUN",
-            "NEW_MEMBER":"ON-NEW-MERMBER-UPDATE",
-            "USER_ACTION":"ON_USER_ACTION"
+            "NEW_MEMBER": "ON-NEW-MERMBER-UPDATE",
+            "USER_ACTION": "ON_USER_ACTION"
         },
         "SERVER_CLIENT": {
             "IDE": "IDE-UPDATE",
             "RUN": "IDE-UPDATE-RUN",
-            "NEW_MEMBER":"NEW-MERMBER-UPDATE",
-            "USER_ACTION":"ON_USER_ACTION_UPDATE"
+            "NEW_MEMBER": "NEW-MERMBER-UPDATE",
+            "USER_ACTION": "ON_USER_ACTION_UPDATE"
         }
     }
 }

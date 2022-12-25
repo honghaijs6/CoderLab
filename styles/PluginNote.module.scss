@@ -1,0 +1,102 @@
+$light: #fff;
+$dark: #2e2e2e;
+$dark-light: #414141;
+$gray: #777777;
+$yellow: #ffcc21;
+$organge-light: #ff963c;
+$organge-dark: #ea6c00;
+$blue-light: #8fe9d0;
+$green: #00ff00;
+
+.pluginNote {
+    background-color: $dark;
+    width: 100%;
+    height: 93vh;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0em;
+    flex-direction: row;
+}
+
+/********************** LEFT SIDE **************************/
+.pluginNote > .left {
+    width: 20%;
+    display: block;
+    color: #fff;
+    border-right: 1px solid rgba($color: #fff, $alpha: 0.12);
+}
+
+.pluginNote > .left ul {
+    margin: 0px;
+    padding: 0px;
+}
+.pluginNote > .left ul li {
+    list-style: none;
+
+    border-bottom: 0px solid #fff;
+    
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    align-items: center;
+    padding: 7px 14px;
+
+    font-size: 15px !important;
+}
+
+.pluginNote > .left ul li.indented1{
+    padding-left: 30px;
+}
+.pluginNote > .left ul li.indented2{
+    padding-left: 50px;
+}
+.pluginNote > .left ul li.indented3{
+    padding-left: 70px;
+}
+
+.pluginNote > .left ul li div.title {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    cursor: pointer;
+}
+.pluginNote > .left ul li div.title:hover{
+    color:  $yellow !important;
+}
+.pluginNote > .left ul li .actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+.pluginNote > .left ul li .actions a{
+    margin-left: 10px;
+    cursor: pointer;
+    display: none;
+    width: 18px; height: 18px;
+    border-radius: 4px;
+    
+}
+.pluginNote > .left ul li .actions a:hover{
+    background-color: rgba($color: #fff, $alpha: 0.12)
+}
+
+.pluginNote > .left ul li:hover {
+    background-color: rgba($color: #fff, $alpha: 0.12);
+}
+.pluginNote > .left ul li:hover .actions a{
+    display: block;
+}
+
+/********************** END LEFT SSIDE **********************/
+
+.pluginNote .right {
+    width: 80%;
+    display: block;
+    background-color: #fff;
+}

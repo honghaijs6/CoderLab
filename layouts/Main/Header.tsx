@@ -1,22 +1,28 @@
 
-//LIBS
-import { signOut, signIn, useSession } from "next-auth/react";
-import { useRouter } from 'next/router';
+// HELPERS 
+import APP from "config/App.json";
+import genURL from "ultils/genURL";
 
+
+//LIBS
+import { v4 as uuidv4 } from "uuid"
+import { signOut, signIn, useSession } from "next-auth/react";
+
+
+// COMPONENTS
 import Icon from "components/Icon";
 import Modal from "components/Modal";
 import { useState } from "react";
 
 
+
 const Header = () => {
 
     const { data: session } = useSession();
-    const router = useRouter();
 
     const [localState, setLocalState] = useState({
         isOpen: false
-    })
-
+    });
 
     const _toggleModal = () => {
         setLocalState((prev) => {
@@ -27,14 +33,10 @@ const Header = () => {
         })
     }
     const _nav = (route = '') => {
-
-        if (!session) {
-            _toggleModal();
-            return true
-        }
-
-        router.push(`${route}/${String(session?.user?.email).split('@')[0]}`)
+        const URL = genURL(session?.user, route);
+        !session?.user ? _toggleModal() : window.location.href = URL ? URL : '/'
     }
+
     return (
         <div className="site-header">
 
@@ -47,12 +49,12 @@ const Header = () => {
                 <div className="box-center">
                     <div>
                         <h4>Please tring login using your google account</h4>
-                        <br />
+                        <div style={{ marginTop: 10 }}>
+                            <button onClick={() => signIn('google')} className="btn btn-primary">
+                                Login with google
+                            </button>
 
-
-                        <button onClick={() => signIn('google')} className="btn btn-primary">
-                            Login with google
-                        </button>
+                        </div>
                     </div>
                 </div>
 
@@ -62,15 +64,18 @@ const Header = () => {
                     <span className="text-organge">{`<CoderLab/>`}</span>
                 </div>
                 <div className="NAV" >
-                    <a onClick={() => _nav('practice')}>
-                        <Icon name="coffee" size={22} />
-                        Practice
-                    </a>
 
-                    <a onClick={() => _nav('challenge')}>
-                        <Icon name="challenge" size={25} />
-                        Challenge
-                    </a>
+                    {
+                        APP.PLUGINS.slice(0, 2).map((plugin) => {
+                            return (
+                                <a key={uuidv4()} onClick={() => _nav(plugin?.alias)}>
+                                    <Icon name={plugin?.icon} size={20} style={{ marginTop:5}} />
+                                    {plugin?.name}
+                                </a>
+                            )
+                        })
+                    }
+
 
 
 

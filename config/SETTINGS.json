@@ -53,5 +53,38 @@
             "follower": 1,
             "image": "https://avatars.githubusercontent.com/u/30486967?s=70&v=4"
         }
+    ],
+
+    "NOTES": [
+        {
+            "icon": "note",
+            "name": "All notes",
+            "alias": "all"
+        },
+        {
+            "icon": "folder",
+            "name": "Notebooks",
+            "alias": "books"
+        },
+        {
+            "icon": "hash",
+            "name": "Tags",
+            "alias": "tags"
+        },
+        {
+            "icon": "global",
+            "name": "Published",
+            "alias": "publish"
+        },
+        {
+            "icon": "status",
+            "name": "Status",
+            "alias": "status"
+        },
+        {
+            "icon": "trash",
+            "name": "Trash",
+            "alias": "trash"
+        }
     ]
 }

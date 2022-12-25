@@ -13,6 +13,7 @@ import DDButton from "components/DDButton";
 import { useState } from "react";
 import Modal from "components/Modal";
 import InviteForm, { Iexpert } from "./InviteForm";
+import Icon from "components/Icon";
 
 
 
@@ -43,8 +44,8 @@ const Header: NextPage<HeaderProps> = ({ mode, }) => {
 
     const _genLink = () => {
 
-        
-        return SETTING.APP_URL + '/' + mode + '/' + String(session?.user?.email).split('@')[0]+'?qid='+router?.query?.qid;
+
+        return SETTING.APP_URL + '/' + mode + '/' + String(session?.user?.email).split('@')[0] + '?qid=' + router?.query?.qid;
 
 
     }
@@ -126,8 +127,11 @@ const Header: NextPage<HeaderProps> = ({ mode, }) => {
 
             </Modal>
             <div className="branding text-organge">
-                <div onClick={() => router.push('/')} className="icon">{`</>`}</div>
-                <div className="title">
+                <div onClick={() => router.push('/')} className="icon">
+                    <Icon name={'code'} size={22} color="#fff" />
+
+                </div>
+                <div className="title" style={{ fontWeight:'300'}}>
                     {mode}
                 </div>
             </div>
