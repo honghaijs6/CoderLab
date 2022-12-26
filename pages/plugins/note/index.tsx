@@ -12,6 +12,7 @@ import { useEffect } from "react";
 
 import db from "config/firebase";
 import { collection, onSnapshot, orderBy, query, QuerySnapshot } from "@firebase/firestore";
+import { doGet, doPost, doUpdate } from "services/firestore";
 
 
 const data = [
@@ -41,27 +42,20 @@ const data = [
 
 
 
-const PluginNote = ({list = []}) => {
+const PluginNote = ({ list = [] }) => {
 
-    useEffect(()=>{
-        
-        const colRef = collection(db, "notes");
-        const q = query(colRef);
-        const unsubscribe = onSnapshot(q,(snapshot)=>{
+    useEffect(() => {
 
-            console.log(snapshot);
 
-            const list  =  snapshot.docs.map(doc=>({...doc.data(), id:doc.id}));
+        doGet("NoteTree", "honghaijs6").then(list => {
             console.log(list)
-        });
-
-        return unsubscribe ; 
-
-
+            
+        })
 
         
+        
 
-    },[]);
+    }, []);
 
     return (
         <Playground mode="note">
@@ -80,7 +74,7 @@ const PluginNote = ({list = []}) => {
                         <li className={s.indented1}>
                             <div className={s.title}>
                                 <Icon name="right" size={14} color="#fff" style={{ marginTop: 0, marginRight: 7 }} />
-                                <span>My Blog</span>
+                                <span>Desktop app</span>
 
                             </div>
                             <div className={s.actions}>
@@ -96,7 +90,7 @@ const PluginNote = ({list = []}) => {
                         <li className={s.indented2}>
                             <div className={s.title}>
                                 <Icon name="right" size={14} color="#fff" style={{ marginTop: 0, marginRight: 7 }} />
-                                <span>My Blog sub folder</span>
+                                <span>Feature 1</span>
 
                             </div>
                             <div className={s.actions}>
@@ -109,7 +103,29 @@ const PluginNote = ({list = []}) => {
                         <li className={s.indented3}>
                             <div className={s.title}>
 
-                                <span>Items.tsx</span>
+                                <span>index.tsx</span>
+
+                            </div>
+
+                        </li>
+
+                        <li className={s.indented2}>
+                            <div className={s.title}>
+                                <Icon name="right" size={14} color="#fff" style={{ marginTop: 0, marginRight: 7 }} />
+                                <span>Feature 2</span>
+
+                            </div>
+                            <div className={s.actions}>
+                                <a>
+                                    <Icon name="newFile" size={15} color="#fff" />
+                                </a>
+
+                            </div>
+                        </li>
+                        <li className={s.indented3}>
+                            <div className={s.title}>
+
+                                <span>home.tsx</span>
 
                             </div>
 
